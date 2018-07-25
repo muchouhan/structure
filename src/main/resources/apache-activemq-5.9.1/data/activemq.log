@@ -1,0 +1,793 @@
+2018-07-15 19:07:43,125 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@5e5792a0: startup date [Sun Jul 15 19:07:43 IST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2018-07-15 19:07:44,350 | INFO  | PListStore:[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2018-07-15 19:07:44,398 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2018-07-15 19:07:44,913 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-61811-1531661864761-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2018-07-15 19:07:44,958 | INFO  | Listening for connections at: tcp://Mukund:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-15 19:07:44,958 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2018-07-15 19:07:44,973 | INFO  | Listening for connections at: amqp://Mukund:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-15 19:07:44,976 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-15 19:07:44,989 | INFO  | Listening for connections at: stomp://Mukund:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-15 19:07:44,990 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-15 19:07:45,000 | INFO  | Listening for connections at: mqtt://Mukund:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-15 19:07:45,002 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2018-07-15 19:07:45,155 | INFO  | Listening for connections at ws://Mukund:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2018-07-15 19:07:45,157 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2018-07-15 19:07:45,160 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-61811-1531661864761-0:1) started | org.apache.activemq.broker.BrokerService | main
+2018-07-15 19:07:45,161 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2018-07-15 19:07:45,828 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2018-07-15 19:07:45,902 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2018-07-15 19:07:46,181 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2018-07-15 21:29:25,462 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-43
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:948)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	... 38 more
+2018-07-15 21:29:25,466 | WARN  | /admin/createDestination.action | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-43
+java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-15 21:29:36,348 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-45
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:948)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	... 38 more
+2018-07-15 21:29:36,351 | WARN  | /admin/createDestination.action | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-45
+java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-15 21:29:52,337 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1297189682-40
+2018-07-15 22:01:09,542 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-40
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6197: An error occurred at line: 20 in the jsp file: /WEB-INF/tags/form/forEachMapEntry.tag
+PWC6199: Generated servlet error:
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:123)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:376)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:437)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.loadTagFile(JspServletWrapper.java:261)
+	at org.apache.jasper.compiler.TagFileProcessor.loadTagFile(TagFileProcessor.java:683)
+	at org.apache.jasper.compiler.TagFileProcessor.access$000(TagFileProcessor.java:88)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:739)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:743)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:743)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:498)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.TagFileProcessor.loadTagFiles(TagFileProcessor.java:757)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:222)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:435)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:360)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.SessionFilter.doFilter(SessionFilter.java:45)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-15 22:01:09,545 | WARN  | /admin/message.jsp | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-40
+org.apache.jasper.JasperException: PWC6033: Unable to compile class for JSP
+
+PWC6197: An error occurred at line: 20 in the jsp file: /WEB-INF/tags/form/forEachMapEntry.tag
+PWC6199: Generated servlet error:
+The type java.util.Map$Entry cannot be resolved. It is indirectly referenced from required .class files
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:123)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:296)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:376)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:437)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.loadTagFile(JspServletWrapper.java:261)
+	at org.apache.jasper.compiler.TagFileProcessor.loadTagFile(TagFileProcessor.java:683)
+	at org.apache.jasper.compiler.TagFileProcessor.access$000(TagFileProcessor.java:88)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:739)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:743)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.TagFileProcessor$TagFileLoaderVisitor.visit(TagFileProcessor.java:743)
+	at org.apache.jasper.compiler.Node$CustomTag.accept(Node.java:1501)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.Node$Visitor.visitBody(Node.java:2341)
+	at org.apache.jasper.compiler.Node$Visitor.visit(Node.java:2347)
+	at org.apache.jasper.compiler.Node$Root.accept(Node.java:498)
+	at org.apache.jasper.compiler.Node$Nodes.visit(Node.java:2291)
+	at org.apache.jasper.compiler.TagFileProcessor.loadTagFiles(TagFileProcessor.java:757)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:222)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:435)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:608)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:360)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.SessionFilter.doFilter(SessionFilter.java:45)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-15 22:01:55,513 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-39
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:948)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:693)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	... 38 more
+2018-07-15 22:01:55,522 | WARN  | /admin/deleteMessage.action | org.eclipse.jetty.servlet.ServletHandler | qtp1297189682-39
+java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:693)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-15 22:02:09,630 | INFO  | Removing message helloworld.q(ID:Mukund-64613-1531672236540-1:1:1:1:1) | org.apache.activemq.web.controller.DeleteMessage | qtp1297189682-42
+2018-07-18 22:05:48,840 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3ffc5af1: startup date [Wed Jul 18 22:05:48 IST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2018-07-18 22:05:49,661 | INFO  | PListStore:[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2018-07-18 22:05:49,679 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2018-07-18 22:05:49,992 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-18 22:05:50,012 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-18 22:05:50,013 | INFO  | Recovery replayed 6 operations from the journal in 0.015 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-18 22:05:50,156 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-49996-1531931750034-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2018-07-18 22:05:50,234 | INFO  | Listening for connections at: tcp://Mukund:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-18 22:05:50,238 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2018-07-18 22:05:50,243 | INFO  | Listening for connections at: amqp://Mukund:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-18 22:05:50,244 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-18 22:05:50,249 | INFO  | Listening for connections at: stomp://Mukund:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-18 22:05:50,250 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-18 22:05:50,253 | INFO  | Listening for connections at: mqtt://Mukund:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-18 22:05:50,254 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2018-07-18 22:05:50,371 | INFO  | Listening for connections at ws://Mukund:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2018-07-18 22:05:50,371 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2018-07-18 22:05:50,373 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-49996-1531931750034-0:1) started | org.apache.activemq.broker.BrokerService | main
+2018-07-18 22:05:50,377 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2018-07-18 22:05:50,794 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2018-07-18 22:05:50,853 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2018-07-18 22:05:51,138 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2018-07-20 20:49:50,997 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3ffc5af1: startup date [Fri Jul 20 20:49:50 IST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2018-07-20 20:49:52,355 | INFO  | PListStore:[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2018-07-20 20:49:52,376 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2018-07-20 20:49:52,867 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-20 20:49:52,921 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-20 20:49:52,932 | INFO  | Recovery replayed 60 operations from the journal in 0.044 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-20 20:49:53,120 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-54390-1532099992972-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2018-07-20 20:49:53,272 | INFO  | Listening for connections at: tcp://Mukund:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-20 20:49:53,273 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2018-07-20 20:49:53,281 | INFO  | Listening for connections at: amqp://Mukund:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-20 20:49:53,282 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-20 20:49:53,290 | INFO  | Listening for connections at: stomp://Mukund:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-20 20:49:53,290 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-20 20:49:53,294 | INFO  | Listening for connections at: mqtt://Mukund:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-20 20:49:53,295 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2018-07-20 20:49:53,437 | INFO  | Listening for connections at ws://Mukund:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2018-07-20 20:49:53,438 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2018-07-20 20:49:53,440 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-54390-1532099992972-0:1) started | org.apache.activemq.broker.BrokerService | main
+2018-07-20 20:49:53,440 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2018-07-20 20:49:54,031 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2018-07-20 20:49:54,120 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2018-07-20 20:49:54,561 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2018-07-20 20:56:15,389 | WARN  | Transport Connection to: tcp://127.0.0.1:54398 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54398@61616
+2018-07-20 20:59:54,601 | WARN  | Transport Connection to: tcp://127.0.0.1:54843 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:54843@61616
+2018-07-20 21:45:55,934 | WARN  | Transport Connection to: tcp://127.0.0.1:57847 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57847@61616
+2018-07-23 20:21:58,156 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3ffc5af1: startup date [Mon Jul 23 20:21:58 IST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2018-07-23 20:21:58,948 | INFO  | PListStore:[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2018-07-23 20:21:58,967 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2018-07-23 20:21:59,332 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 20:21:59,391 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 20:21:59,520 | INFO  | Recovery replayed 1782 operations from the journal in 0.17 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 20:21:59,724 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-52002-1532357519571-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2018-07-23 20:21:59,896 | INFO  | Listening for connections at: tcp://Mukund:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 20:21:59,899 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 20:21:59,904 | INFO  | Listening for connections at: amqp://Mukund:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 20:21:59,905 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 20:21:59,910 | INFO  | Listening for connections at: stomp://Mukund:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 20:21:59,911 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 20:21:59,918 | INFO  | Listening for connections at: mqtt://Mukund:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 20:21:59,918 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 20:22:00,140 | INFO  | Listening for connections at ws://Mukund:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2018-07-23 20:22:00,140 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 20:22:00,142 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-52002-1532357519571-0:1) started | org.apache.activemq.broker.BrokerService | main
+2018-07-23 20:22:00,144 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2018-07-23 20:22:00,609 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2018-07-23 20:22:00,678 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2018-07-23 20:22:00,920 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2018-07-23 20:31:56,135 | WARN  | Transport Connection to: tcp://127.0.0.1:52585 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:52585@61616
+2018-07-23 20:56:47,756 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp434610528-49
+2018-07-23 21:36:03,956 | WARN  | Transport Connection to: tcp://127.0.0.1:57303 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57303@61616
+2018-07-23 21:36:03,956 | WARN  | Transport Connection to: tcp://127.0.0.1:57302 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57302@61616
+2018-07-23 21:36:03,955 | WARN  | Transport Connection to: tcp://127.0.0.1:57301 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57301@61616
+2018-07-23 21:36:03,958 | WARN  | Transport Connection to: tcp://127.0.0.1:57307 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57307@61616
+2018-07-23 21:36:03,957 | WARN  | Transport Connection to: tcp://127.0.0.1:57306 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57306@61616
+2018-07-23 21:36:03,957 | WARN  | Transport Connection to: tcp://127.0.0.1:57305 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57305@61616
+2018-07-23 21:36:03,957 | WARN  | Transport Connection to: tcp://127.0.0.1:57304 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57304@61616
+2018-07-23 21:36:37,582 | WARN  | Transport Connection to: tcp://127.0.0.1:57371 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57371@61616
+2018-07-23 21:36:37,584 | WARN  | Transport Connection to: tcp://127.0.0.1:57377 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57377@61616
+2018-07-23 21:36:37,583 | WARN  | Transport Connection to: tcp://127.0.0.1:57376 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57376@61616
+2018-07-23 21:36:37,583 | WARN  | Transport Connection to: tcp://127.0.0.1:57375 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57375@61616
+2018-07-23 21:36:37,583 | WARN  | Transport Connection to: tcp://127.0.0.1:57374 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57374@61616
+2018-07-23 21:36:37,582 | WARN  | Transport Connection to: tcp://127.0.0.1:57373 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57373@61616
+2018-07-23 21:36:37,582 | WARN  | Transport Connection to: tcp://127.0.0.1:57372 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57372@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57438 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57438@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57440 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57440@61616
+2018-07-23 21:37:21,201 | WARN  | Transport Connection to: tcp://127.0.0.1:57444 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57444@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57443 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57443@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57442 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57442@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57441 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57441@61616
+2018-07-23 21:37:21,200 | WARN  | Transport Connection to: tcp://127.0.0.1:57439 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57439@61616
+2018-07-23 21:44:12,318 | WARN  | Transport Connection to: tcp://127.0.0.1:57799 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57799@61616
+2018-07-23 21:44:12,320 | WARN  | Transport Connection to: tcp://127.0.0.1:57804 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57804@61616
+2018-07-23 21:44:12,320 | WARN  | Transport Connection to: tcp://127.0.0.1:57803 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57803@61616
+2018-07-23 21:44:12,319 | WARN  | Transport Connection to: tcp://127.0.0.1:57802 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57802@61616
+2018-07-23 21:44:12,319 | WARN  | Transport Connection to: tcp://127.0.0.1:57801 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57801@61616
+2018-07-23 21:44:12,319 | WARN  | Transport Connection to: tcp://127.0.0.1:57800 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57800@61616
+2018-07-23 21:44:12,318 | WARN  | Transport Connection to: tcp://127.0.0.1:57798 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:57798@61616
+2018-07-23 21:47:59,627 | WARN  | Transport Connection to: tcp://127.0.0.1:58099 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58099@61616
+2018-07-23 21:47:59,630 | WARN  | Transport Connection to: tcp://127.0.0.1:58105 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58105@61616
+2018-07-23 21:47:59,629 | WARN  | Transport Connection to: tcp://127.0.0.1:58104 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58104@61616
+2018-07-23 21:47:59,629 | WARN  | Transport Connection to: tcp://127.0.0.1:58103 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58103@61616
+2018-07-23 21:47:59,628 | WARN  | Transport Connection to: tcp://127.0.0.1:58102 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58102@61616
+2018-07-23 21:47:59,627 | WARN  | Transport Connection to: tcp://127.0.0.1:58101 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58101@61616
+2018-07-23 21:47:59,627 | WARN  | Transport Connection to: tcp://127.0.0.1:58100 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58100@61616
+2018-07-23 21:49:44,022 | WARN  | Transport Connection to: tcp://127.0.0.1:58179 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58179@61616
+2018-07-23 21:49:44,024 | WARN  | Transport Connection to: tcp://127.0.0.1:58185 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58185@61616
+2018-07-23 21:49:44,023 | WARN  | Transport Connection to: tcp://127.0.0.1:58184 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58184@61616
+2018-07-23 21:49:44,022 | WARN  | Transport Connection to: tcp://127.0.0.1:58183 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58183@61616
+2018-07-23 21:49:44,022 | WARN  | Transport Connection to: tcp://127.0.0.1:58182 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58182@61616
+2018-07-23 21:49:44,022 | WARN  | Transport Connection to: tcp://127.0.0.1:58180 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58180@61616
+2018-07-23 21:49:44,022 | WARN  | Transport Connection to: tcp://127.0.0.1:58181 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58181@61616
+2018-07-23 21:50:07,868 | WARN  | Transport Connection to: tcp://127.0.0.1:58296 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58296@61616
+2018-07-23 21:50:07,870 | WARN  | Transport Connection to: tcp://127.0.0.1:58301 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58301@61616
+2018-07-23 21:50:07,869 | WARN  | Transport Connection to: tcp://127.0.0.1:58300 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58300@61616
+2018-07-23 21:50:07,869 | WARN  | Transport Connection to: tcp://127.0.0.1:58299 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58299@61616
+2018-07-23 21:50:07,869 | WARN  | Transport Connection to: tcp://127.0.0.1:58298 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58298@61616
+2018-07-23 21:50:07,868 | WARN  | Transport Connection to: tcp://127.0.0.1:58297 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58297@61616
+2018-07-23 21:50:07,868 | WARN  | Transport Connection to: tcp://127.0.0.1:58295 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58295@61616
+2018-07-23 21:58:39,159 | WARN  | Transport Connection to: tcp://127.0.0.1:58856 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58856@61616
+2018-07-23 21:58:39,159 | WARN  | Transport Connection to: tcp://127.0.0.1:58863 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58863@61616
+2018-07-23 21:59:33,524 | WARN  | Transport Connection to: tcp://127.0.0.1:58935 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58935@61616
+2018-07-23 22:05:11,198 | WARN  | Transport Connection to: tcp://127.0.0.1:59138 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59138@61616
+2018-07-23 22:11:42,574 | WARN  | Transport Connection to: tcp://127.0.0.1:59716 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59716@61616
+2018-07-23 22:11:42,575 | WARN  | Transport Connection to: tcp://127.0.0.1:59721 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59721@61616
+2018-07-23 22:11:42,575 | WARN  | Transport Connection to: tcp://127.0.0.1:59720 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59720@61616
+2018-07-23 22:11:42,574 | WARN  | Transport Connection to: tcp://127.0.0.1:59719 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59719@61616
+2018-07-23 22:11:42,574 | WARN  | Transport Connection to: tcp://127.0.0.1:59718 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59718@61616
+2018-07-23 22:11:42,574 | WARN  | Transport Connection to: tcp://127.0.0.1:59715 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59715@61616
+2018-07-23 22:11:42,574 | WARN  | Transport Connection to: tcp://127.0.0.1:59717 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59717@61616
+2018-07-23 22:15:14,607 | WARN  | Transport Connection to: tcp://127.0.0.1:59959 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59959@61616
+2018-07-23 22:15:14,607 | WARN  | Transport Connection to: tcp://127.0.0.1:59960 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59960@61616
+2018-07-23 22:16:47,494 | WARN  | Transport Connection to: tcp://127.0.0.1:60058 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60058@61616
+2018-07-23 22:16:47,494 | WARN  | Transport Connection to: tcp://127.0.0.1:60059 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60059@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60128 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60128@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60151 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60151@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60150 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60150@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60149 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60149@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60148 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60148@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60147 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60147@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60146 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60146@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60145 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60145@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60134 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60134@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60133 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60133@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60132 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60132@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60131 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60131@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60130 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60130@61616
+2018-07-23 22:17:45,252 | WARN  | Transport Connection to: tcp://127.0.0.1:60129 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60129@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60244 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60244@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60250 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60250@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60249 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60249@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60248 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60248@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60247 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60247@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60246 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60246@61616
+2018-07-23 22:19:22,410 | WARN  | Transport Connection to: tcp://127.0.0.1:60245 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:60245@61616
+2018-07-23 22:31:35,016 | WARN  | Transport Connection to: tcp://127.0.0.1:61104 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61104@61616
+2018-07-23 22:31:35,016 | WARN  | Transport Connection to: tcp://127.0.0.1:61105 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61105@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61198 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61198@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61204 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61204@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61203 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61203@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61199 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61199@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61202 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61202@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61201 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61201@61616
+2018-07-23 22:33:47,150 | WARN  | Transport Connection to: tcp://127.0.0.1:61200 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61200@61616
+2018-07-23 22:40:02,471 | WARN  | Transport Connection to: tcp://127.0.0.1:61683 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61683@61616
+2018-07-23 22:40:02,472 | WARN  | Transport Connection to: tcp://127.0.0.1:61689 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61689@61616
+2018-07-23 22:40:02,472 | WARN  | Transport Connection to: tcp://127.0.0.1:61688 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61688@61616
+2018-07-23 22:40:02,472 | WARN  | Transport Connection to: tcp://127.0.0.1:61687 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61687@61616
+2018-07-23 22:40:02,472 | WARN  | Transport Connection to: tcp://127.0.0.1:61686 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61686@61616
+2018-07-23 22:40:02,472 | WARN  | Transport Connection to: tcp://127.0.0.1:61685 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61685@61616
+2018-07-23 22:40:02,471 | WARN  | Transport Connection to: tcp://127.0.0.1:61684 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:61684@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62332 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62332@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62338 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62338@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62337 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62337@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62336 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62336@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62335 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62335@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62334 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62334@61616
+2018-07-23 22:49:47,026 | WARN  | Transport Connection to: tcp://127.0.0.1:62333 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62333@61616
+2018-07-23 22:51:04,799 | WARN  | Transport Connection to: tcp://127.0.0.1:62444 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62444@61616
+2018-07-23 22:51:04,800 | WARN  | Transport Connection to: tcp://127.0.0.1:62449 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62449@61616
+2018-07-23 22:51:04,800 | WARN  | Transport Connection to: tcp://127.0.0.1:62448 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62448@61616
+2018-07-23 22:51:04,800 | WARN  | Transport Connection to: tcp://127.0.0.1:62446 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62446@61616
+2018-07-23 22:51:04,800 | WARN  | Transport Connection to: tcp://127.0.0.1:62445 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62445@61616
+2018-07-23 22:51:04,800 | WARN  | Transport Connection to: tcp://127.0.0.1:62447 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62447@61616
+2018-07-23 22:51:04,799 | WARN  | Transport Connection to: tcp://127.0.0.1:62443 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62443@61616
+2018-07-23 22:52:14,526 | WARN  | Transport Connection to: tcp://127.0.0.1:62533 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62533@61616
+2018-07-23 22:52:14,527 | WARN  | Transport Connection to: tcp://127.0.0.1:62538 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62538@61616
+2018-07-23 22:52:14,527 | WARN  | Transport Connection to: tcp://127.0.0.1:62537 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62537@61616
+2018-07-23 22:52:14,527 | WARN  | Transport Connection to: tcp://127.0.0.1:62536 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62536@61616
+2018-07-23 22:52:14,527 | WARN  | Transport Connection to: tcp://127.0.0.1:62535 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62535@61616
+2018-07-23 22:52:14,527 | WARN  | Transport Connection to: tcp://127.0.0.1:62534 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62534@61616
+2018-07-23 22:52:14,526 | WARN  | Transport Connection to: tcp://127.0.0.1:62532 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62532@61616
+2018-07-23 22:53:13,927 | WARN  | Transport Connection to: tcp://127.0.0.1:62618 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62618@61616
+2018-07-23 22:53:13,928 | WARN  | Transport Connection to: tcp://127.0.0.1:62623 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62623@61616
+2018-07-23 22:53:13,928 | WARN  | Transport Connection to: tcp://127.0.0.1:62622 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62622@61616
+2018-07-23 22:53:13,928 | WARN  | Transport Connection to: tcp://127.0.0.1:62621 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62621@61616
+2018-07-23 22:53:13,928 | WARN  | Transport Connection to: tcp://127.0.0.1:62617 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62617@61616
+2018-07-23 22:53:13,928 | WARN  | Transport Connection to: tcp://127.0.0.1:62620 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62620@61616
+2018-07-23 22:53:13,927 | WARN  | Transport Connection to: tcp://127.0.0.1:62619 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:62619@61616
+2018-07-23 23:01:21,567 | WARN  | Transport Connection to: tcp://127.0.0.1:63187 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63187@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49456 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49456@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49455 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49455@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49454 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49454@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49453 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49453@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49451 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49451@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49449 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49449@61616
+2018-07-23 23:37:24,909 | WARN  | Transport Connection to: tcp://127.0.0.1:49450 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49450@61616
+2018-07-23 23:37:24,444 | WARN  | Transport Connection to: tcp://127.0.0.1:65280 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65280 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:24,260 | WARN  | Transport Connection to: tcp://127.0.0.1:65278 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65278 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:24,186 | WARN  | Transport Connection to: tcp://127.0.0.1:65276 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65276 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:24,130 | WARN  | Transport Connection to: tcp://127.0.0.1:65274 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65274 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:24,053 | WARN  | Transport Connection to: tcp://127.0.0.1:65273 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65273 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:23,995 | WARN  | Transport Connection to: tcp://127.0.0.1:65271 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65271 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:37:23,901 | WARN  | Transport Connection to: tcp://127.0.0.1:65247 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65247 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49345 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49345@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49343 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49343@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49342 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49342@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49341 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49341@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49340 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49340@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49339 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49339@61616
+2018-07-23 23:35:58,419 | WARN  | Transport Connection to: tcp://127.0.0.1:49338 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49338@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65518 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65518@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65514 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65514@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65517 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65517@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65516 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65516@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65513 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65513@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65512 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65512@61616
+2018-07-23 23:33:05,340 | WARN  | Transport Connection to: tcp://127.0.0.1:65511 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65511@61616
+2018-07-23 23:33:04,933 | WARN  | Transport Connection to: tcp://127.0.0.1:65074 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65074 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,900 | WARN  | Transport Connection to: tcp://127.0.0.1:65073 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65073 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,867 | WARN  | Transport Connection to: tcp://127.0.0.1:65072 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65072 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,835 | WARN  | Transport Connection to: tcp://127.0.0.1:65071 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65071 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,776 | WARN  | Transport Connection to: tcp://127.0.0.1:65070 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65070 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,747 | WARN  | Transport Connection to: tcp://127.0.0.1:65069 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65069 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:33:04,649 | WARN  | Transport Connection to: tcp://127.0.0.1:65068 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65068 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65280 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65280@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65276 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65276@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65278 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65278@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65271 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65271@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65274 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65274@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65273 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65273@61616
+2018-07-23 23:29:51,889 | WARN  | Transport Connection to: tcp://127.0.0.1:65247 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65247@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65074 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65074@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65073 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65073@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65072 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65072@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65070 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65070@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65071 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65071@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65069 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65069@61616
+2018-07-23 23:27:29,755 | WARN  | Transport Connection to: tcp://127.0.0.1:65068 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:65068@61616
+2018-07-23 23:27:29,372 | WARN  | Transport Connection to: tcp://127.0.0.1:64975 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64975 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:27:29,101 | WARN  | Transport Connection to: tcp://127.0.0.1:64974 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64974 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:27:28,851 | WARN  | Transport Connection to: tcp://127.0.0.1:64973 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64973 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:27:28,558 | WARN  | Transport Connection to: tcp://127.0.0.1:64972 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64972 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:27:28,028 | WARN  | Transport Connection to: tcp://127.0.0.1:64971 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64971 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:27:04,447 | WARN  | Transport Connection to: tcp://127.0.0.1:64970 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64970 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:26:53,681 | WARN  | Transport Connection to: tcp://127.0.0.1:64959 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:64959 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64974 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64974@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64975 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64975@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64959 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64959@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64973 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64973@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64972 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64972@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64971 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64971@61616
+2018-07-23 23:25:25,950 | WARN  | Transport Connection to: tcp://127.0.0.1:64970 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:64970@61616
+2018-07-23 23:25:25,575 | WARN  | Transport Connection to: tcp://127.0.0.1:63191 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63191 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,545 | WARN  | Transport Connection to: tcp://127.0.0.1:63190 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63190 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,508 | WARN  | Transport Connection to: tcp://127.0.0.1:63189 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63189 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,477 | WARN  | Transport Connection to: tcp://127.0.0.1:63188 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63188 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,440 | WARN  | Transport Connection to: tcp://127.0.0.1:63187 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63187 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,414 | WARN  | Transport Connection to: tcp://127.0.0.1:63186 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63186 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:25:25,341 | WARN  | Transport Connection to: tcp://127.0.0.1:63184 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:63184 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:01:21,568 | WARN  | Transport Connection to: tcp://127.0.0.1:63191 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63191@61616
+2018-07-23 23:01:21,568 | WARN  | Transport Connection to: tcp://127.0.0.1:63190 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63190@61616
+2018-07-23 23:01:21,568 | WARN  | Transport Connection to: tcp://127.0.0.1:63189 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63189@61616
+2018-07-23 23:01:21,567 | WARN  | Transport Connection to: tcp://127.0.0.1:63186 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63186@61616
+2018-07-23 23:01:21,567 | WARN  | Transport Connection to: tcp://127.0.0.1:63188 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63188@61616
+2018-07-23 23:01:21,567 | WARN  | Transport Connection to: tcp://127.0.0.1:63184 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:63184@61616
+2018-07-23 23:37:46,184 | WARN  | Transport Connection to: tcp://127.0.0.1:65513 failed: org.apache.activemq.transport.InactivityIOException: Cannot send, channel has already failed: tcp://127.0.0.1:65513 | org.apache.activemq.broker.TransportConnection.Transport | Async Exception Handler
+2018-07-23 23:38:23,606 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3ffc5af1: startup date [Mon Jul 23 23:38:23 IST 2018]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2018-07-23 23:38:24,440 | INFO  | PListStore:[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2018-07-23 23:38:24,480 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[D:\Mukund\primefaces\structure-web\src\main\resources\apache-activemq-5.9.1\bin\..\data\kahadb] | org.apache.activemq.broker.BrokerService | main
+2018-07-23 23:38:24,864 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 23:38:24,930 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 23:38:24,934 | INFO  | Recovery replayed 8 operations from the journal in 0.05 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2018-07-23 23:38:25,181 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-49524-1532369305005-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2018-07-23 23:38:25,397 | INFO  | Listening for connections at: tcp://Mukund:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 23:38:25,398 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 23:38:25,409 | INFO  | Listening for connections at: amqp://Mukund:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 23:38:25,412 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 23:38:25,425 | INFO  | Listening for connections at: stomp://Mukund:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 23:38:25,426 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 23:38:25,437 | INFO  | Listening for connections at: mqtt://Mukund:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2018-07-23 23:38:25,440 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 23:38:25,707 | INFO  | Listening for connections at ws://Mukund:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2018-07-23 23:38:25,708 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2018-07-23 23:38:25,710 | INFO  | Apache ActiveMQ 5.9.1 (localhost, ID:Mukund-49524-1532369305005-0:1) started | org.apache.activemq.broker.BrokerService | main
+2018-07-23 23:38:25,712 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2018-07-23 23:38:26,132 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2018-07-23 23:38:26,190 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2018-07-23 23:38:26,416 | INFO  | jolokia-agent: No access restrictor found at classpath:/jolokia-access.xml, access to all MBeans is allowed | /api | main
+2018-07-23 23:38:49,159 | WARN  | Transport Connection to: tcp://127.0.0.1:49566 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49566@61616
+2018-07-23 23:38:49,165 | WARN  | Transport Connection to: tcp://127.0.0.1:49569 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49569@61616
+2018-07-23 23:38:49,162 | WARN  | Transport Connection to: tcp://127.0.0.1:49570 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49570@61616
+2018-07-23 23:38:49,161 | WARN  | Transport Connection to: tcp://127.0.0.1:49571 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49571@61616
+2018-07-23 23:38:49,161 | WARN  | Transport Connection to: tcp://127.0.0.1:49568 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49568@61616
+2018-07-23 23:38:49,159 | WARN  | Transport Connection to: tcp://127.0.0.1:49565 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49565@61616
+2018-07-23 23:38:49,161 | WARN  | Transport Connection to: tcp://127.0.0.1:49567 failed: java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49567@61616
+2018-07-23 23:41:52,804 | WARN  | Transport Connection to: tcp://127.0.0.1:49787 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49787@61616
+2018-07-23 23:41:52,806 | WARN  | Transport Connection to: tcp://127.0.0.1:49792 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49792@61616
+2018-07-23 23:41:52,805 | WARN  | Transport Connection to: tcp://127.0.0.1:49791 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49791@61616
+2018-07-23 23:41:52,805 | WARN  | Transport Connection to: tcp://127.0.0.1:49790 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49790@61616
+2018-07-23 23:41:52,804 | WARN  | Transport Connection to: tcp://127.0.0.1:49789 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49789@61616
+2018-07-23 23:41:52,804 | WARN  | Transport Connection to: tcp://127.0.0.1:49788 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49788@61616
+2018-07-23 23:41:52,804 | WARN  | Transport Connection to: tcp://127.0.0.1:49786 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49786@61616
+2018-07-23 23:44:55,587 | WARN  | Transport Connection to: tcp://127.0.0.1:49989 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49989@61616
+2018-07-23 23:44:55,588 | WARN  | Transport Connection to: tcp://127.0.0.1:49995 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49995@61616
+2018-07-23 23:44:55,588 | WARN  | Transport Connection to: tcp://127.0.0.1:49990 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49990@61616
+2018-07-23 23:44:55,588 | WARN  | Transport Connection to: tcp://127.0.0.1:49994 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49994@61616
+2018-07-23 23:44:55,588 | WARN  | Transport Connection to: tcp://127.0.0.1:49993 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49993@61616
+2018-07-23 23:44:55,587 | WARN  | Transport Connection to: tcp://127.0.0.1:49992 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49992@61616
+2018-07-23 23:44:55,587 | WARN  | Transport Connection to: tcp://127.0.0.1:49991 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:49991@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50148 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50148@61616
+2018-07-23 23:47:08,272 | WARN  | Transport Connection to: tcp://127.0.0.1:50152 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50152@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50150 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50150@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50151 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50151@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50149 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50149@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50147 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50147@61616
+2018-07-23 23:47:08,271 | WARN  | Transport Connection to: tcp://127.0.0.1:50146 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50146@61616
+2018-07-23 23:53:46,124 | WARN  | Transport Connection to: tcp://127.0.0.1:50566 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50566@61616
+2018-07-23 23:53:46,125 | WARN  | Transport Connection to: tcp://127.0.0.1:50570 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50570@61616
+2018-07-23 23:53:46,125 | WARN  | Transport Connection to: tcp://127.0.0.1:50569 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50569@61616
+2018-07-23 23:53:46,124 | WARN  | Transport Connection to: tcp://127.0.0.1:50568 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50568@61616
+2018-07-23 23:53:46,124 | WARN  | Transport Connection to: tcp://127.0.0.1:50567 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50567@61616
+2018-07-23 23:53:46,124 | WARN  | Transport Connection to: tcp://127.0.0.1:50565 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50565@61616
+2018-07-23 23:53:46,124 | WARN  | Transport Connection to: tcp://127.0.0.1:50564 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50564@61616

@@ -1,0 +1,548 @@
+#addHierarchyD(GBS #@@@# GBS)
+#addHierarchyD(RDM #@@@# RDM)
+#addHierarchyD(GFA #@@@# GFA)
+#############################################
+#addLevelD(GBS #@@@# level1 #@@@# Level 1)
+#addLevelD(GBS #@@@# level2 #@@@# Level 2)
+#addLevelD(GBS #@@@# level3 #@@@# Level 3)
+#addLevelD(GBS #@@@# level4 #@@@# Level 4)
+#addLevelD(GBS #@@@# level5 #@@@# Level 5)
+#addLevelD(GBS #@@@# level6 #@@@# Level 6)
+#addLevelD(GBS #@@@# level7 #@@@# Level 7)
+#addLevelD(GBS #@@@# level8 #@@@# Level 8)
+#addLevelD(GBS #@@@# level9 #@@@# Level 9)
+#addLevelD(GBS #@@@# level10 #@@@# Level 10)
+#addLevelD(GBS #@@@# level11 #@@@# Level 11)
+#
+#addLevelD(RDM #@@@# RDM_SP1 #@@@# SP1)
+#addLevelD(RDM #@@@# RDM_SP2 #@@@# SP2)
+#addLevelD(RDM #@@@# RDM_SP3 #@@@# SP3)
+#addLevelD(RDM #@@@# RDM_SP4 #@@@# SP4)
+#
+#addLevelD(GFA #@@@# GFA_Lvl1 #@@@# SP1)
+#addLevelD(GFA #@@@# GFA_Lvl2 #@@@# SP2)
+#addLevelD(GFA #@@@# GFA_Lvl3 #@@@# SP3)
+#addLevelD(GFA #@@@# GFA_Lvl4 #@@@# SP4)
+#addLevelD(GFA #@@@# GFA_Lvl5 #@@@# SP5)
+#addLevelD(GFA #@@@# GFA_Lvl6 #@@@# SP6)
+#addLevelD(GFA #@@@# GFA_Lvl7 #@@@# SP7)
+#
+################################################
+#addPropertyD(PANEL #@@@# Panel Name)
+#addPropertyD(ISMAND #@@@# Is Mandatory)
+#addPropertyD(TYPE #@@@# Field Type)
+#addPropertyD(SEQ #@@@# Sequence Number)
+#
+########################Action########################
+#
+#addNoteTypeD(GBS #@@@# GBS_ACTION #@@@# Action)
+#
+#addNotePropertyD(GBS_ACTION #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_ACTION #@@@# SEQ #@@@# 1)
+#addNotePropertyD(GBS_ACTION #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_ACTION )
+#addNoteUsageD(level2 #@@@# GBS_ACTION )
+#addNoteUsageD(level3 #@@@# GBS_ACTION )
+#addNoteUsageD(level4 #@@@# GBS_ACTION )
+#addNoteUsageD(level5 #@@@# GBS_ACTION )
+#addNoteUsageD(level6 #@@@# GBS_ACTION )
+#addNoteUsageD(level7 #@@@# GBS_ACTION )
+#addNoteUsageD(level8 #@@@# GBS_ACTION )
+#addNoteUsageD(level9 #@@@# GBS_ACTION )
+#addNoteUsageD(level10 #@@@# GBS_ACTION )
+#addNoteUsageD(level11 #@@@# GBS_ACTION )
+#
+#########################Record Status#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_RECORD_STATUS #@@@# Record Status)
+#
+#addNotePropertyD(GBS_RECORD_STATUS #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_RECORD_STATUS #@@@# SEQ #@@@# 2)
+#addNotePropertyD(GBS_RECORD_STATUS #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level2 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level3 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level4 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level5 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level6 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level7 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level8 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level9 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level10 #@@@# GBS_RECORD_STATUS )
+#addNoteUsageD(level11 #@@@# GBS_RECORD_STATUS )
+#
+#########################Book Name#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_BOOK_NAME #@@@# Book Name)
+#
+#addNotePropertyD(GBS_BOOK_NAME #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_BOOK_NAME #@@@# SEQ #@@@# 3)
+#addNotePropertyD(GBS_BOOK_NAME #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level2 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level3 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level4 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level5 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level6 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level7 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level8 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level9 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level10 #@@@# GBS_BOOK_NAME )
+#addNoteUsageD(level11 #@@@# GBS_BOOK_NAME )
+#
+##########################Book Short Name######################
+#
+#addNoteTypeD(GBS #@@@# GBS_BOOK_SHORT_NAME #@@@# Book Short Name)
+#
+#addNotePropertyD(GBS_BOOK_SHORT_NAME #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_BOOK_SHORT_NAME #@@@# SEQ #@@@# 4)
+#addNotePropertyD(GBS_BOOK_SHORT_NAME #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level2 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level3 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level4 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level5 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level6 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level7 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level8 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level9 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level10 #@@@# GBS_BOOK_SHORT_NAME )
+#addNoteUsageD(level11 #@@@# GBS_BOOK_SHORT_NAME )
+#
+#
+#########################Unique Record Identifier#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_URI #@@@# Unique Record Identifier)
+#
+#addNotePropertyD(GBS_URI #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_URI #@@@# SEQ #@@@# 5)
+#addNotePropertyD(GBS_URI #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_URI )
+#addNoteUsageD(level2 #@@@# GBS_URI )
+#addNoteUsageD(level3 #@@@# GBS_URI )
+#addNoteUsageD(level4 #@@@# GBS_URI )
+#addNoteUsageD(level5 #@@@# GBS_URI )
+#addNoteUsageD(level6 #@@@# GBS_URI )
+#addNoteUsageD(level7 #@@@# GBS_URI )
+#addNoteUsageD(level8 #@@@# GBS_URI )
+#addNoteUsageD(level9 #@@@# GBS_URI )
+#addNoteUsageD(level10 #@@@# GBS_URI )
+#addNoteUsageD(level11 #@@@# GBS_URI )
+#
+#########################GBS Spine Parent Record#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_PARENT_URI #@@@# GBS Spine Parent Record)
+#
+#addNotePropertyD(GBS_PARENT_URI #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_PARENT_URI #@@@# SEQ #@@@# 6)
+#addNotePropertyD(GBS_PARENT_URI #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level2 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level3 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level4 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level5 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level6 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level7 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level8 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level9 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level10 #@@@# GBS_PARENT_URI )
+#addNoteUsageD(level11 #@@@# GBS_PARENT_URI )
+#
+#
+#########################STBK#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_STBK #@@@# STBK)
+#
+#addNotePropertyD(GBS_STBK #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_STBK #@@@# SEQ #@@@# 7)
+#addNotePropertyD(GBS_STBK #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_STBK )
+#addNoteUsageD(level2 #@@@# GBS_STBK )
+#addNoteUsageD(level3 #@@@# GBS_STBK )
+#addNoteUsageD(level4 #@@@# GBS_STBK )
+#addNoteUsageD(level5 #@@@# GBS_STBK )
+#addNoteUsageD(level6 #@@@# GBS_STBK )
+#addNoteUsageD(level7 #@@@# GBS_STBK )
+#addNoteUsageD(level8 #@@@# GBS_STBK )
+#addNoteUsageD(level9 #@@@# GBS_STBK )
+#addNoteUsageD(level10 #@@@# GBS_STBK )
+#addNoteUsageD(level11 #@@@# GBS_STBK )
+#
+#########################Segknow#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_SEGKNOW #@@@# Segknow)
+#
+#addNotePropertyD(GBS_SEGKNOW #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_SEGKNOW #@@@# SEQ #@@@# 8)
+#addNotePropertyD(GBS_SEGKNOW #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level2 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level3 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level4 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level5 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level6 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level7 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level8 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level9 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level10 #@@@# GBS_SEGKNOW )
+#addNoteUsageD(level11 #@@@# GBS_SEGKNOW )
+#
+#
+##########################Structures#####################
+#addListTypeD(GBS #@@@# GBS_STRUCTURE #@@@# Structures )
+#
+#addListPropertyD(GBS_STRUCTURE #@@@# PANEL #@@@# Basic)
+#addListPropertyD(GBS_STRUCTURE #@@@# SEQ #@@@# 9)
+#addListPropertyD(GBS_STRUCTURE #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_STRUCTURE #@@@# GBS #@@@# GBS)
+#addListTypeItemD(GBS_STRUCTURE #@@@# RDM #@@@# RDM)
+#addListTypeItemD(GBS_STRUCTURE #@@@# GFA #@@@# GFA)
+#addListTypeItemD(GBS_STRUCTURE #@@@# US #@@@# US)
+#
+#
+#addListUsageD(level1 #@@@# GBS_STRUCTURE )
+#addListUsageD(level2 #@@@# GBS_STRUCTURE )
+#addListUsageD(level3 #@@@# GBS_STRUCTURE )
+#addListUsageD(level4 #@@@# GBS_STRUCTURE )
+#addListUsageD(level5 #@@@# GBS_STRUCTURE )
+#addListUsageD(level5 #@@@# GBS_STRUCTURE )
+#addListUsageD(level6 #@@@# GBS_STRUCTURE )
+#addListUsageD(level7 #@@@# GBS_STRUCTURE )
+#addListUsageD(level8 #@@@# GBS_STRUCTURE )
+#addListUsageD(level9 #@@@# GBS_STRUCTURE )
+#addListUsageD(level10 #@@@# GBS_STRUCTURE )
+#addListUsageD(level11 #@@@# GBS_STRUCTURE )
+#
+#
+#
+#########################Level#######################
+#
+#addNoteTypeD(GBS #@@@# GBS_LEVEL #@@@# Level)
+#
+#addNotePropertyD(GBS_LEVEL #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_LEVEL #@@@# SEQ #@@@# 10)
+#addNotePropertyD(GBS_LEVEL #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_LEVEL )
+#addNoteUsageD(level2 #@@@# GBS_LEVEL )
+#addNoteUsageD(level3 #@@@# GBS_LEVEL )
+#addNoteUsageD(level4 #@@@# GBS_LEVEL )
+#addNoteUsageD(level5 #@@@# GBS_LEVEL )
+#addNoteUsageD(level6 #@@@# GBS_LEVEL )
+#addNoteUsageD(level7 #@@@# GBS_LEVEL )
+#addNoteUsageD(level8 #@@@# GBS_LEVEL )
+#addNoteUsageD(level9 #@@@# GBS_LEVEL )
+#addNoteUsageD(level10 #@@@# GBS_LEVEL )
+#addNoteUsageD(level11 #@@@# GBS_LEVEL )
+#
+#
+########################Look Through#############################
+#
+#addFlagTypeD(GBS #@@@# GBS_LOOK_THROUGH #@@@# Look Through)
+#
+#addFlagPropertyD(GBS_LOOK_THROUGH #@@@# PANEL #@@@# Basic)
+#addFlagPropertyD(GBS_LOOK_THROUGH #@@@# SEQ #@@@# 11)
+#addFlagPropertyD(GBS_LOOK_THROUGH #@@@# ISMAND #@@@# Y)
+#
+#addFlagUsageD(level1 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level2 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level3 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level4 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level5 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level6 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level7 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level8 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level9 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level10 #@@@# GBS_LOOK_THROUGH )
+#addFlagUsageD(level11 #@@@# GBS_LOOK_THROUGH )
+#
+#
+##########################Legal Entity#####################
+#addListTypeD(GBS #@@@# GBS_LEGAL_ENTITY #@@@# Legal Entity )
+#
+#addListPropertyD(GBS_LEGAL_ENTITY #@@@# PANEL #@@@# Basic)
+#addListPropertyD(GBS_LEGAL_ENTITY #@@@# SEQ #@@@# 12)
+#addListPropertyD(GBS_LEGAL_ENTITY #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_LEGAL_ENTITY #@@@# GBS #@@@# GBS)
+#addListTypeItemD(GBS_LEGAL_ENTITY #@@@# RDM #@@@# RDM)
+#addListTypeItemD(GBS_LEGAL_ENTITY #@@@# GFA #@@@# GFA)
+#addListTypeItemD(GBS_LEGAL_ENTITY #@@@# US #@@@# US)
+#
+#
+#addListUsageD(level1 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level2 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level3 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level4 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level5 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level5 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level6 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level7 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level8 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level9 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level10 #@@@# GBS_LEGAL_ENTITY )
+#addListUsageD(level11 #@@@# GBS_LEGAL_ENTITY )
+#
+#
+##########################Risk Managed Region#####################
+#addListTypeD(GBS #@@@# GBS_RISK_MANAGED_REGION #@@@# Risk Managed Region )
+#
+#addListPropertyD(GBS_RISK_MANAGED_REGION #@@@# PANEL #@@@# Basic)
+#addListPropertyD(GBS_RISK_MANAGED_REGION #@@@# SEQ #@@@# 13)
+#addListPropertyD(GBS_RISK_MANAGED_REGION #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_RISK_MANAGED_REGION #@@@# GBS #@@@# GBS)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION #@@@# RDM #@@@# RDM)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION #@@@# GFA #@@@# GFA)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION #@@@# US #@@@# US)
+#
+#
+#addListUsageD(level1 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level2 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level3 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level4 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level5 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level5 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level6 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level7 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level8 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level9 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level10 #@@@# GBS_RISK_MANAGED_REGION )
+#addListUsageD(level11 #@@@# GBS_RISK_MANAGED_REGION )
+#
+#
+##########################Risk Managed Region with HQR#####################
+#addListTypeD(GBS #@@@# GBS_RISK_MANAGED_REGION_HQR #@@@# Risk Managed Region with HQR )
+#
+#addListPropertyD(GBS_RISK_MANAGED_REGION_HQR #@@@# PANEL #@@@# Basic)
+#addListPropertyD(GBS_RISK_MANAGED_REGION_HQR #@@@# SEQ #@@@# 14)
+#addListPropertyD(GBS_RISK_MANAGED_REGION_HQR #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_RISK_MANAGED_REGION_HQR #@@@# GBS #@@@# GBS)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION_HQR #@@@# RDM #@@@# RDM)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION_HQR #@@@# GFA #@@@# GFA)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION_HQR #@@@# US #@@@# US)
+#addListTypeItemD(GBS_RISK_MANAGED_REGION_HQR #@@@# HQR #@@@# HQR)
+#
+#addListUsageD(level1 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level2 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level3 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level4 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level5 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level5 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level6 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level7 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level8 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level9 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level10 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#addListUsageD(level11 #@@@# GBS_RISK_MANAGED_REGION_HQR )
+#
+#
+########################## Internal Trading/Non trading#####################
+#addListTypeD(GBS #@@@# GBS_TRADING_NON_TRADING #@@@# Internal Trading/Non trading )
+#
+#addListPropertyD(GBS_TRADING_NON_TRADING #@@@# PANEL #@@@# Basic)
+#addListPropertyD(GBS_TRADING_NON_TRADING #@@@# SEQ #@@@# 15)
+#addListPropertyD(GBS_TRADING_NON_TRADING #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_TRADING_NON_TRADING #@@@# GBS #@@@# Trading)
+#addListTypeItemD(GBS_TRADING_NON_TRADING #@@@# RDM #@@@# Non Trading)
+#
+#addListUsageD(level1 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level2 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level3 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level4 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level5 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level5 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level6 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level7 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level8 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level9 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level10 #@@@# GBS_TRADING_NON_TRADING )
+#addListUsageD(level11 #@@@# GBS_TRADING_NON_TRADING )
+#
+#
+##########################Purpose of Request#####################
+#addNoteTypeD(GBS #@@@# GBS_PURPOSE #@@@# Purpose of Request)
+#
+#addNotePropertyD(GBS_PURPOSE #@@@# PANEL #@@@# Basic)
+#addNotePropertyD(GBS_PURPOSE #@@@# SEQ #@@@# 16)
+#addNotePropertyD(GBS_PURPOSE #@@@# ISMAND #@@@# Y)
+#
+#addNoteUsageD(level1 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level2 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level3 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level4 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level5 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level6 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level7 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level8 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level9 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level10 #@@@# GBS_PURPOSE )
+#addNoteUsageD(level11 #@@@# GBS_PURPOSE )
+#
+#
+##########################Opening Date#####################
+#addNoteTypeD(GBS #@@@# GBS_OPENING_DATE #@@@# Opening Date)
+#
+#addNotePropertyD(GBS_OPENING_DATE #@@@# PANEL #@@@# Dates)
+#addNotePropertyD(GBS_OPENING_DATE #@@@# SEQ #@@@# 1)
+#addNotePropertyD(GBS_OPENING_DATE #@@@# ISMAND #@@@# Y)
+#addNotePropertyD(GBS_OPENING_DATE #@@@# TYPE #@@@# Date)
+#
+#addNoteUsageD(level1 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level2 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level3 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level4 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level5 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level6 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level7 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level8 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level9 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level10 #@@@# GBS_OPENING_DATE )
+#addNoteUsageD(level11 #@@@# GBS_OPENING_DATE )
+#
+##########################Effective Date#####################
+#addNoteTypeD(GBS #@@@# GBS_EFFECTIVE_DATE #@@@# Effective Date)
+#
+#addNotePropertyD(GBS_EFFECTIVE_DATE #@@@# PANEL #@@@# Dates)
+#addNotePropertyD(GBS_EFFECTIVE_DATE #@@@# SEQ #@@@# 2)
+#addNotePropertyD(GBS_EFFECTIVE_DATE #@@@# ISMAND #@@@# Y)
+#addNotePropertyD(GBS_EFFECTIVE_DATE #@@@# TYPE #@@@# Date)
+#
+#addNoteUsageD(level1 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level2 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level3 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level4 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level5 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level6 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level7 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level8 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level9 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level10 #@@@# GBS_EFFECTIVE_DATE )
+#addNoteUsageD(level11 #@@@# GBS_EFFECTIVE_DATE )
+#
+#
+##########################Market Risk Owner#####################
+#addListTypeD(GBS #@@@# GBS_MARKET_RISK_OWNER #@@@# Market Risk Owner )
+#
+#addListPropertyD(GBS_MARKET_RISK_OWNER #@@@# PANEL #@@@# Owners)
+#addListPropertyD(GBS_MARKET_RISK_OWNER #@@@# SEQ #@@@# 1)
+#addListPropertyD(GBS_MARKET_RISK_OWNER #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_MARKET_RISK_OWNER #@@@# GBS #@@@# Trading)
+#addListTypeItemD(GBS_MARKET_RISK_OWNER #@@@# RDM #@@@# Non Trading)
+#
+#addListUsageD(level1 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level2 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level3 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level4 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level5 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level5 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level6 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level7 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level8 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level9 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level10 #@@@# GBS_MARKET_RISK_OWNER )
+#addListUsageD(level11 #@@@# GBS_MARKET_RISK_OWNER )
+#
+#
+##########################MIS Owner#####################
+#addListTypeD(GBS #@@@# GBS_MIS_OWNER #@@@# MIS Owner )
+#
+#addListPropertyD(GBS_MIS_OWNER #@@@# PANEL #@@@# Owners)
+#addListPropertyD(GBS_MIS_OWNER #@@@# SEQ #@@@# 2)
+#addListPropertyD(GBS_MIS_OWNER #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_MIS_OWNER #@@@# GBS #@@@# Trading)
+#addListTypeItemD(GBS_MIS_OWNER #@@@# RDM #@@@# Non Trading)
+#
+#addListUsageD(level1 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level2 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level3 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level4 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level5 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level5 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level6 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level7 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level8 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level9 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level10 #@@@# GBS_MIS_OWNER )
+#addListUsageD(level11 #@@@# GBS_MIS_OWNER )
+#
+#
+##########################Financial Accounting Region(FAR)#####################
+#addListTypeD(GBS #@@@# GBS_FAR #@@@# Financial Accounting Region(FAR) )
+#
+#addListPropertyD(GBS_FAR #@@@# PANEL #@@@# Classification)
+#addListPropertyD(GBS_FAR #@@@# SEQ #@@@# 1)
+#addListPropertyD(GBS_FAR #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_FAR #@@@# GBS #@@@# Trading)
+#addListTypeItemD(GBS_FAR #@@@# RDM #@@@# Non Trading)
+#
+#addListUsageD(level1 #@@@# GBS_FAR )
+#addListUsageD(level2 #@@@# GBS_FAR )
+#addListUsageD(level3 #@@@# GBS_FAR )
+#addListUsageD(level4 #@@@# GBS_FAR )
+#addListUsageD(level5 #@@@# GBS_FAR )
+#addListUsageD(level5 #@@@# GBS_FAR )
+#addListUsageD(level6 #@@@# GBS_FAR )
+#addListUsageD(level7 #@@@# GBS_FAR )
+#addListUsageD(level8 #@@@# GBS_FAR )
+#addListUsageD(level9 #@@@# GBS_FAR )
+#addListUsageD(level10 #@@@# GBS_FAR )
+#addListUsageD(level11 #@@@# GBS_FAR )
+#
+#
+##########################Regional EOD-Finance#####################
+#addListTypeD(GBS #@@@# GBS_REGIONAL_EOD_FINANCE #@@@# Regional EOD-Finance )
+#
+#addListPropertyD(GBS_REGIONAL_EOD_FINANCE #@@@# PANEL #@@@# Classification)
+#addListPropertyD(GBS_REGIONAL_EOD_FINANCE #@@@# SEQ #@@@# 15)
+#addListPropertyD(GBS_REGIONAL_EOD_FINANCE #@@@# ISMAND #@@@# Y)
+#
+#addListTypeItemD(GBS_REGIONAL_EOD_FINANCE #@@@# GBS #@@@# Trading)
+#addListTypeItemD(GBS_REGIONAL_EOD_FINANCE #@@@# RDM #@@@# Non Trading)
+#
+#addListUsageD(level1 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level2 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level3 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level4 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level5 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level5 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level6 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level7 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level8 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level9 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level10 #@@@# GBS_REGIONAL_EOD_FINANCE )
+#addListUsageD(level11 #@@@# GBS_REGIONAL_EOD_FINANCE )
+
+
+#addDroolRuleD(FIRSTNAME_RL #@@@# NEW #@@@# GBS #@@@# true)
+#addDroolActionD(FIRSTNAME_ACT #@@@# validate($facts) #@@@# com.mukund.structure.utils.FirstNameValidator)
+#addDroolRuleActionD(FIRSTNAME_RL #@@@# FIRSTNAME_ACT)
+
+#addDroolRuleD(LASTNAME_RL #@@@# NEW #@@@# GBS #@@@# true)
+#addDroolActionD(LASTNAME_ACT #@@@# validate($facts) #@@@# com.mukund.structure.validators.LastNameValidator)
+#addDroolRuleActionD(LASTNAME_RL #@@@# LASTNAME_ACT)
+
+##############################NEW##############GBS##############################
+addDroolRuleD(BOOKNAME_MNDT_RL #@@@# NEW #@@@# GBS #@@@# has['GBS_BOOK_NAME']==null)
+addDroolActionD(BOOKNAME_MNDT_ACT #@@@# fieldMandatory("Book Name",$facts) #@@@# com.mukund.structure.utils.BookNameValidator)
+addDroolRuleActionD(BOOKNAME_MNDT_RL #@@@# BOOKNAME_MNDT_ACT)
+
+
+#addDroolRuleD(LASTNAME_RL #@@@# NEW #@@@# GBS #@@@# true)
+#addDroolActionD(LASTNAME_ACT #@@@# validate($facts) #@@@# com.mukund.structure.validators.LastNameValidator)
+#addDroolRuleActionD(LASTNAME_RL #@@@# LASTNAME_ACT)
+

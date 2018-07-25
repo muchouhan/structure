@@ -1,0 +1,81 @@
+<config id="1">
+	<factories id="2">
+		<factory id="3">
+			<connectionFactoryName>ConnectionFactoryOnline</connectionFactoryName>
+			<connectionFactoryClass>org.apache.activemq.jndi.ActiveMQInitialContextFactory</connectionFactoryClass>
+			<external>false</external>
+			<msecTimeoutValue>120000</msecTimeoutValue>
+			<name>online</name>
+			<providerUrl>tcp://localhost:61616</providerUrl>
+		</factory>
+		<factory id="4">
+			<connectionFactoryName>ConnectionFactoryOffline</connectionFactoryName>
+			<connectionFactoryClass>org.apache.activemq.jndi.ActiveMQInitialContextFactory</connectionFactoryClass>
+			<external>false</external>
+			<msecTimeoutValue>180000</msecTimeoutValue>
+			<name>offline</name>
+			<providerUrl>tcp://localhost:61616</providerUrl>
+		</factory>
+	</factories>
+
+	<queues id="5">
+		<queue id="7">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>EmployeeRoleInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>EmployeeRole</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.EmployeeRoleInboundQueue</queueClass>
+		</queue>
+		<queue id="8">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>LegalEntityInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>LegalEntity</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.LegalEntityInboundQueue</queueClass>
+		</queue>
+		<queue id="9">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>SectorDomainInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>SectorDomain</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.SectorDomainInboundQueue</queueClass>
+		</queue>
+		<queue id="10">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>BookInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>Book</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.BookInboundQueue</queueClass>
+		</queue>
+		<queue id="11">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>CobraBookInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>CobraBook</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.CobraBookInboundQueue</queueClass>
+		</queue>
+		<queue id="12">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>ActivitiReportInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>Report</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.ActivitiReportInboundQueue</queueClass>
+		</queue>
+		<queue id="13">
+			<isOutboundQueue>false</isOutboundQueue>
+			<name>RepublishBookInbound</name>
+			<factorySpec class="factory" reference="4" />
+			<messageType>Book</messageType>
+			<queueClass>com.mukund.structure.service.jms.inbound.RepublishBookInboundQueue</queueClass>
+		</queue>
+		
+		<!-- All outbound queue -->
+		<queue id="15">
+			<isOutboundQueue>true</isOutboundQueue>
+			<name>BookOutbound</name>
+			<factorySpec class="factory" reference="3" />
+			<messageType>Book</messageType>
+			<queueClass>com.mukund.structure.service.jms.outbound.BookOutboundQueue</queueClass>
+		</queue>
+	</queues>
+</config>

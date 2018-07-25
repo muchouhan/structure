@@ -1,0 +1,26 @@
+template header
+request_type
+structure
+conditions
+method
+ruleclass
+package com.mukund.structure.drool.rules;
+
+dialect "mvel"
+import com.mukund.structure.model.DroolsBookFacts;
+import com.mukund.structure.model.HierarchyE;
+import com.mukund.structure.model.BookActionE;
+
+template "StructureRules"
+
+
+rule "Structure: @{structure}, Request Type: @{request_type} -> Structure Rule:@{row.rowNumber} "
+
+when
+     $facts : DroolsBookFacts("@{structure}"== hierarchy && "@{request_type}" == action && @{conditions})
+     $rClass:@{ruleclass}()
+then
+     $rClass.@{method}
+end
+
+end template

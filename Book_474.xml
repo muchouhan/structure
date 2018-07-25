@@ -1,0 +1,238 @@
+<com.mukund.structure.model.Book id="1">
+	<id>474</id>
+	<requester>muchouhan</requester>
+	<hierarchy>GBS</hierarchy>
+	<attributes id="2">
+		<com.mukund.structure.model.BookAttribute
+			id="3">
+			<code>GBS_MARKET_RISK_OWNER</code>
+			<seq>1</seq>
+			<label>Market Risk Owner</label>
+			<tab>Owners</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="4">
+			<code>GBS_RISK_MANAGED_REGION_HQR</code>
+			<seq>14</seq>
+			<label>Risk Managed Region with HQR</label>
+			<tab>Basic</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="5">
+			<code>GBS_STBK</code>
+			<seq>7</seq>
+			<label>STBK</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="6">
+			<code>GBS_LEVEL</code>
+			<value>LEVEL1</value>
+			<seq>10</seq>
+			<label>Level</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="7">
+			<code>GBS_REGIONAL_EOD_FINANCE</code>
+			<seq>15</seq>
+			<label>Regional EOD-Finance</label>
+			<tab>Classification</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="8">
+			<code>GBS_OPENING_DATE</code>
+			<seq>1</seq>
+			<label>Opening Date</label>
+			<tab>Dates</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="9">
+			<code>GBS_FAR</code>
+			<seq>1</seq>
+			<label>Financial Accounting Region(FAR)</label>
+			<tab>Classification</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="10">
+			<code>GBS_BOOK_NAME</code>
+			<value>Mukund Submit</value>
+			<seq>3</seq>
+			<label>Book Name</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="11">
+			<code>GBS_RECORD_STATUS</code>
+			<seq>2</seq>
+			<label>Record Status</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="12">
+			<code>GBS_ACTION</code>
+			<value>New</value>
+			<seq>1</seq>
+			<label>Action</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="13">
+			<code>GBS_TRADING_NON_TRADING</code>
+			<seq>15</seq>
+			<label> Internal Trading/Non trading</label>
+			<tab>Basic</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="14">
+			<code>GBS_SEGKNOW</code>
+			<seq>8</seq>
+			<label>Segknow</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="15">
+			<code>GBS_STRUCTURE</code>
+			<seq>9</seq>
+			<label>Structures</label>
+			<tab>Basic</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="16">
+			<code>GBS_EFFECTIVE_DATE</code>
+			<seq>2</seq>
+			<label>Effective Date</label>
+			<tab>Dates</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="17">
+			<code>GBS_BOOK_SHORT_NAME</code>
+			<value>Chouhan Submit</value>
+			<seq>4</seq>
+			<label>Book Short Name</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="18">
+			<code>GBS_PURPOSE</code>
+			<seq>16</seq>
+			<label>Purpose of Request</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="19">
+			<code>GBS_LEGAL_ENTITY</code>
+			<seq>12</seq>
+			<label>Legal Entity</label>
+			<tab>Basic</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="20">
+			<code>GBS_PARENT_URI</code>
+			<value>0</value>
+			<seq>6</seq>
+			<label>GBS Spine Parent Record</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="21">
+			<code>GBS_LOOK_THROUGH</code>
+			<seq>11</seq>
+			<label>Look Through</label>
+			<tab>Basic</tab>
+			<type>CHECKBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="22">
+			<code>GBS_RISK_MANAGED_REGION</code>
+			<seq>13</seq>
+			<label>Risk Managed Region</label>
+			<tab>Basic</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="23">
+			<code>GBS_MIS_OWNER</code>
+			<seq>2</seq>
+			<label>MIS Owner</label>
+			<tab>Owners</tab>
+			<type>DROPDOWN</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+		<com.mukund.structure.model.BookAttribute
+			id="24">
+			<code>GBS_URI</code>
+			<seq>5</seq>
+			<label>Unique Record Identifier</label>
+			<tab>Basic</tab>
+			<type>TEXTBOX</type>
+			<isMandatory>true</isMandatory>
+			<isEnable>false</isEnable>
+		</com.mukund.structure.model.BookAttribute>
+	</attributes>
+	<legacyBooks id="25" />
+	<altSysBooks id="26" />
+	<approvers id="27">
+		<string>sarthak</string>
+		<string>surabhi</string>
+	</approvers>
+</com.mukund.structure.model.Book>

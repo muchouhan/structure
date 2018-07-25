@@ -1,0 +1,87 @@
+########################STBK Code#######################
+
+addListTypeD(RDM #@@@# RDM_STBK #@@@# STBK Code)
+
+addListPropertyD(RDM_STBK #@@@# PANEL #@@@# Basic)
+addListPropertyD(RDM_STBK #@@@# SEQ #@@@# 7)
+addListPropertyD(RDM_STBK #@@@# ISMAND #@@@# Y)
+
+addListUsageD(RDM_SP1 #@@@# RDM_STBK )
+addListUsageD(RDM_SP2 #@@@# RDM_STBK )
+addListUsageD(RDM_SP3 #@@@# RDM_STBK )
+addListUsageD(RDM_SP4 #@@@# RDM_STBK )
+
+
+########################Record Status#######################
+
+addNoteTypeD(RDM #@@@# RDM_RECORD_STATUS #@@@# Record Status)
+
+addNotePropertyD(RDM_RECORD_STATUS #@@@# PANEL #@@@# Basic)
+addNotePropertyD(RDM_RECORD_STATUS #@@@# SEQ #@@@# 2)
+addNotePropertyD(RDM_RECORD_STATUS #@@@# ISMAND #@@@# Y)
+
+addNoteUsageD(RDM_SP1 #@@@# RDM_RECORD_STATUS )
+addNoteUsageD(RDM_SP2 #@@@# RDM_RECORD_STATUS )
+addNoteUsageD(RDM_SP3 #@@@# RDM_RECORD_STATUS )
+addNoteUsageD(RDM_SP4 #@@@# RDM_RECORD_STATUS )
+
+########################Book Name#######################
+
+addNoteTypeD(RDM #@@@# RDM_BOOK_NAME #@@@# Book Name)
+
+addNotePropertyD(RDM_BOOK_NAME #@@@# PANEL #@@@# Basic)
+addNotePropertyD(RDM_BOOK_NAME #@@@# SEQ #@@@# 3)
+addNotePropertyD(RDM_BOOK_NAME #@@@# ISMAND #@@@# Y)
+
+addNoteUsageD(RDM_SP1 #@@@# RDM_BOOK_NAME )
+addNoteUsageD(RDM_SP2 #@@@# RDM_BOOK_NAME )
+addNoteUsageD(RDM_SP3 #@@@# RDM_BOOK_NAME )
+addNoteUsageD(RDM_SP4 #@@@# RDM_BOOK_NAME )
+
+#########################Book Short Name######################
+
+addNoteTypeD(RDM #@@@# RDM_BOOK_SHORT_NAME #@@@# Book Short Name)
+
+addNotePropertyD(RDM_BOOK_SHORT_NAME #@@@# PANEL #@@@# Basic)
+addNotePropertyD(RDM_BOOK_SHORT_NAME #@@@# SEQ #@@@# 4)
+addNotePropertyD(RDM_BOOK_SHORT_NAME #@@@# ISMAND #@@@# Y)
+
+addNoteUsageD(RDM_SP1 #@@@# RDM_BOOK_SHORT_NAME )
+addNoteUsageD(RDM_SP2 #@@@# RDM_BOOK_SHORT_NAME )
+addNoteUsageD(RDM_SP3 #@@@# RDM_BOOK_SHORT_NAME )
+addNoteUsageD(RDM_SP4 #@@@# RDM_BOOK_SHORT_NAME )
+
+
+
+#########################Legal Entity#####################
+addListTypeD(RDM #@@@# RDM_LEGAL_ENTITY #@@@# Legal Entity )
+
+addListPropertyD(RDM_LEGAL_ENTITY #@@@# PANEL #@@@# Basic)
+addListPropertyD(RDM_LEGAL_ENTITY #@@@# SEQ #@@@# 12)
+addListPropertyD(RDM_LEGAL_ENTITY #@@@# ISMAND #@@@# Y)
+
+addListTypeItemD(RDM_LEGAL_ENTITY #@@@# GBS #@@@# GBS)
+addListTypeItemD(RDM_LEGAL_ENTITY #@@@# RDM #@@@# RDM)
+addListTypeItemD(RDM_LEGAL_ENTITY #@@@# GFA #@@@# GFA)
+addListTypeItemD(RDM_LEGAL_ENTITY #@@@# US #@@@# US)
+
+
+addListUsageD(RDM_SP1 #@@@# RDM_LEGAL_ENTITY )
+addListUsageD(RDM_SP2 #@@@# RDM_LEGAL_ENTITY )
+addListUsageD(RDM_SP3 #@@@# RDM_LEGAL_ENTITY )
+addListUsageD(RDM_SP4 #@@@# RDM_LEGAL_ENTITY )
+
+#########################Level#######################
+#
+addNoteTypeD(RDM #@@@# RDM_LEVEL #@@@# Level)
+#
+addNotePropertyD(RDM_LEVEL #@@@# PANEL #@@@# Basic)
+addNotePropertyD(RDM_LEVEL #@@@# SEQ #@@@# 10)
+addNotePropertyD(RDM_LEVEL #@@@# ISMAND #@@@# Y)
+#
+addNoteUsageD(RDM_SP1 #@@@# RDM_LEVEL )
+addNoteUsageD(RDM_SP2 #@@@# RDM_LEVEL )
+addNoteUsageD(RDM_SP3 #@@@# RDM_LEVEL )
+addNoteUsageD(RDM_SP4 #@@@# RDM_LEVEL )
+#
+

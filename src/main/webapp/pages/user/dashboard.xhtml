@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+<h:head>
+	<title>#{messages.Dashboard}&#160;#{messages.AppName}</title>
+	<f:facet name="middle">
+		<h:outputStylesheet name="bootstrap/css/bootstrap.css" />
+		<h:outputStylesheet name="css/dashboard.css" />
+		<link type="text/css" rel="stylesheet"
+			href="https://www.primefaces.org/showcase/javax.faces.resource/theme.css.xhtml?ln=primefaces-omega" />
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+		<h:outputScript name="bootstrap/js/bootstrap.js" />
+	</f:facet>
+
+</h:head>
+<h:body>
+
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" size="74" gutter="0">
+			<ui:include src="/pages/user/header.xhtml" />
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west" size="280" gutter="0">
+			<ui:include src="/pages/user/searchPanel.xhtml" />
+		</p:layoutUnit>
+		<p:layoutUnit position="center" gutter="0">
+			<p:layout >
+				<p:layoutUnit position="north" size="200" gutter="0">
+					<ui:include src="/pages/user/editGrid.xhtml" />
+				</p:layoutUnit>
+				<p:layoutUnit position="center" gutter="0">
+					<ui:include src="/pages/user/editPanel.xhtml" />
+				</p:layoutUnit>
+			</p:layout>
+		</p:layoutUnit>
+
+	</p:layout>
+
+</h:body>
+</html>

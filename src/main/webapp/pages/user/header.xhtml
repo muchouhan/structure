@@ -1,0 +1,64 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:jsf="http://xmlns.jcp.org/jsf"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions">
+
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Structure</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Mukund Chouhan</a></li>
+		            <li><p:link value="#{messages.Logout}" outcome="/pages/loginPage.xhtml"/></li>
+				</ul>
+				
+			</div>
+		</div>
+		<p:toolbar>
+			<f:facet name="left">
+				<p:commandButton type="button" value="Book" icon="ui-icon-document" />
+
+				<p:commandButton type="button" value="Request"
+					icon="ui-icon-folder-open" />
+
+				<p:commandButton rendered="#{menuB.hasRole('APPRVR')}"
+					type="button" value="Approval" icon="ui-icon-folder-open" />
+				<p:commandButton rendered="#{menuB.hasRole('TASKMGMT')}"
+					type="button" value="Task Management" icon="ui-icon-folder-open" />
+				<p:commandButton type="button" value="GAVD"
+					icon="ui-icon-folder-open" />
+				<p:commandButton rendered="#{menuB.hasRole('ADMIN')}"
+					type="button" value="Admin" icon="ui-icon-folder-open" />
+				<p:commandButton type="button" value="Help"
+					icon="ui-icon-folder-open" />
+				<span class="ui-separator"> <span
+					class="ui-icon ui-icon-grip-dotted-vertical" />
+				</span>
+
+				<p:commandButton type="button" title="Save" icon="ui-icon-disk" />
+				<p:commandButton type="button" title="Delete" icon="ui-icon-trash" />
+				<p:commandButton type="button" title="Print" icon="ui-icon-print" />
+			</f:facet>
+		</p:toolbar>
+
+		<p:breadCrumb>
+			<p:menuitem value="Categories" url="#" />
+			<p:menuitem value="Sports" url="#" />
+			<p:menuitem value="Basketball" url="#" />
+			<p:menuitem value="NBA" url="#" />
+			<p:menuitem value="Teams" url="#" />
+			<p:menuitem value="L.A. Lakers" url="#" />
+			<p:menuitem value="Roster" url="#" />
+			<p:menuitem value="Kobe Bryant" url="#" />
+		</p:breadCrumb>
+
+	</div>
+
+
+</ui:composition>

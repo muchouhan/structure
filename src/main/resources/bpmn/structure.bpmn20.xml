@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:activiti="http://activiti.org/bpmn"
+             typeLanguage="http://www.w3.org/2001/XMLSchema"
+             expressionLanguage="http://www.w3.org/1999/XPath"
+             xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/DI
+             http://www.omg.org/spec/BPMN/20100524/MODEL"
+             targetNamespace="studerw.com">
+	
+	<process id="structure_workflow" name="Structure Workflow" isExecutable="true">
+		
+		<startEvent id="start_workflow" activiti:initiator="initiator" name="Start">
+			<extensionElements>
+				<activiti:executionListener event="start" activiti:expression="${workflowDelegate.start(execution)}"> </activiti:executionListener>
+			</extensionElements>
+		</startEvent>
+
+		<serviceTask id="find_approver_delegate" name="Find Approver Delegate" activiti:expression="${workflowDelegate.assingApprover(execution)}"  />
+
+		<subProcess id="approval_sub_process" name="Multiple Approver Subprocess">
+			<multiInstanceLoopCharacteristics isSequential="false" activiti:collection="approvers" activiti:elementVariable="approver" />
+			<startEvent id="approval_process_start_event" name="Start" />
+			
+			<userTask id="approval_Task_listner" name="Approval Task Listner">
+				<extensionElements>
+					<activiti:taskListener event="create" activiti:expression="${workflowListener.createTask(execution, task)}" />
+					<activiti:taskListener event="complete" activiti:expression="${workflowListener.completeTask(execution, task)}" />
+				</extensionElements>
+			</userTask>
+			
+			<exclusiveGateway id="approver_action_gateway" name="Approver Action" />
+			
+			<serviceTask id="task_approved_delegate" name="Task Approved Delegate" activiti:expression="${workflowDelegate.approve(execution)}" />
+			<serviceTask id="task_rejected_delegate" name="Task Rejected Delegate" activiti:expression="${workflowDelegate.reject(execution)}" />
+			<serviceTask id="task_update_require_delegate" name="Task Update Require Delegate" activiti:expression="${workflowDelegate.updateRequire(execution)}" />
+			
+			<userTask id="user_update_task" name="User Input for Update Task">
+				<extensionElements>
+					<activiti:taskListener event="create" activiti:expression="${workflowListener.createUserUpdateTask(execution, task)}"  />
+					<activiti:taskListener event="complete" activiti:expression="${workflowListener.completeUserUpdateTask(execution, task)}"  />
+				</extensionElements>
+			</userTask>
+			
+			<endEvent id="approval_end_event" name="End" />
+			
+			<sequenceFlow id="SequenceFlow_3" sourceRef="approval_process_start_event" targetRef="approval_Task_listner" />
+			<sequenceFlow id="SequenceFlow_4" sourceRef="approval_Task_listner" targetRef="approver_action_gateway" />
+			
+			<sequenceFlow id="SequenceFlow_5" sourceRef="approver_action_gateway" targetRef="task_approved_delegate">
+				<conditionExpression xsi:type="tFormalExpression"><![CDATA[${taskStatus == 'Approved'}]]></conditionExpression>
+			</sequenceFlow>
+			
+			<sequenceFlow id="SequenceFlow_6" sourceRef="approver_action_gateway" targetRef="task_rejected_delegate">
+				<conditionExpression xsi:type="tFormalExpression"><![CDATA[${taskStatus == 'Rejected'}]]></conditionExpression>
+			</sequenceFlow>
+			
+			<sequenceFlow id="SequenceFlow_7" sourceRef="approver_action_gateway" targetRef="task_update_require_delegate">
+				<conditionExpression xsi:type="tFormalExpression"><![CDATA[${taskStatus == 'Update Require'}]]></conditionExpression>
+			</sequenceFlow>
+			<sequenceFlow id="SequenceFlow_8" sourceRef="task_update_require_delegate" targetRef="user_update_task" />
+			<sequenceFlow id="SequenceFlow_9" sourceRef="user_update_task" targetRef="approval_Task_listner" />
+			<sequenceFlow id="SequenceFlow_10" sourceRef="task_approved_delegate" targetRef="approval_end_event" />
+			<sequenceFlow id="SequenceFlow_11" sourceRef="task_rejected_delegate" targetRef="approval_end_event" />
+			
+		</subProcess>
+
+		 <!-- Expiry Timer on subprocess -->
+	    <boundaryEvent id="approval_expiry_timer" name="Aproval Expiry Timer" attachedToRef="approval_sub_process" cancelActivity="true">
+	      <timerEventDefinition>
+	        <timeDuration>PT4H</timeDuration>
+	      </timerEventDefinition>
+	    </boundaryEvent>
+	    <serviceTask id="approval_expiry_delegate" name="Approval Expiry Task" activiti:expression="${boundaryEventDelegate.approvalExpired(execution)}" />
+	    <sequenceFlow id="SequenceFlow_16" sourceRef="approval_expiry_timer" targetRef="approval_expiry_delegate" />
+	    <sequenceFlow id="SequenceFlow_17" sourceRef="approval_expiry_delegate" targetRef="end_workflow" />
+			    
+
+		 <!-- Reminder Email Timer on subprocess -->
+	    <boundaryEvent id="approval_reminder_timer" name="Aproval Reminder Timer" attachedToRef="approval_sub_process" cancelActivity="false">
+	      <timerEventDefinition>
+	        <timeDuration>PT1H</timeDuration>
+	      </timerEventDefinition>
+	    </boundaryEvent>
+	    <serviceTask id="approval_reminder_delegate" name="Approval Reminder Task" activiti:expression="${boundaryEventDelegate.approvalReminder(execution)}"  />
+	    <sequenceFlow id="SequenceFlow_18" sourceRef="approval_reminder_timer" targetRef="approval_reminder_delegate" />
+		<sequenceFlow id="SequenceFlow_21" sourceRef="approval_reminder_delegate" targetRef="end_workflow" />
+			    
+		<exclusiveGateway id="approval_sub_process_status_gateway" name="Approval Sub Process Status" />
+		<serviceTask id="pending_mastering_delegate" name="Pending Mastering" activiti:expression="${workflowDelegate.persisting(execution)}" />
+		<endEvent id="end_workflow" name="End" />
+
+
+		<sequenceFlow id="SequenceFlow_1" sourceRef="start_workflow" targetRef="find_approver_delegate" />
+		<sequenceFlow id="SequenceFlow_2" sourceRef="find_approver_delegate" targetRef="approval_sub_process" />
+		
+		<sequenceFlow id="SequenceFlow_12" sourceRef="approval_sub_process" targetRef="approval_sub_process_status_gateway" />
+		
+		<sequenceFlow id="SequenceFlow_13" sourceRef="approval_sub_process_status_gateway" targetRef="pending_mastering_delegate">
+			<conditionExpression xsi:type="tFormalExpression"><![CDATA[${requestStatus == 'Approved'}]]></conditionExpression>
+		</sequenceFlow>
+		
+		<sequenceFlow id="SequenceFlow_14" sourceRef="approval_sub_process_status_gateway" targetRef="end_workflow">
+			<conditionExpression xsi:type="tFormalExpression"><![CDATA[${requestStatus == 'Rejected'}]]></conditionExpression>
+		</sequenceFlow>
+
+		<sequenceFlow id="SequenceFlow_15" sourceRef="pending_mastering_delegate" targetRef="end_workflow" />
+	</process>
+</definitions>
