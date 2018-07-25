@@ -1,24 +1,22 @@
 package com.mukund.structure.utils;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
+
 import javax.faces.application.FacesMessage;
-import javax.faces.application.FacesMessage.Severity;
 import javax.faces.component.UIComponent;
 import javax.faces.component.UIInput;
 import javax.faces.component.UISelectItem;
 import javax.faces.context.FacesContext;
 import javax.faces.validator.ValidatorException;
+
 import org.primefaces.context.RequestContext;
 
 /**
  * 
- * @author MOHAMMED BOUNAGA
+ * @author muchouhan
  * 
- * github.com/medbounaga
  */
 
 public class JsfUtil {

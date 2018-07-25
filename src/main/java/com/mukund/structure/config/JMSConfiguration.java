@@ -1,8 +1,6 @@
 package com.mukund.structure.config;
 
 import javax.inject.Inject;
-import javax.jms.JMSException;
-import javax.naming.NamingException;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.context.annotation.Bean;
@@ -13,7 +11,6 @@ import org.springframework.core.env.Environment;
 import org.springframework.jms.core.JmsTemplate;
 
 import com.mukund.structure.exception.JmsConfigurationException;
-import com.mukund.structure.model.xml.ConfigNodeSpec;
 import com.mukund.structure.service.jms.JmsConfigFactory;
 
 /**

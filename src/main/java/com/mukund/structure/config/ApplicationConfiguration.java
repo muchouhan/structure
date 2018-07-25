@@ -97,8 +97,8 @@ public class ApplicationConfiguration {
 	@PropertySource("classpath:application_production.properties")
 	static class Production {
 
-		@Autowired
-		private Environment environment;
+//		@Autowired
+//		private Environment environment;
 
 		@Primary
 		@Bean(destroyMethod = "close")

@@ -1,7 +1,6 @@
 package com.mukund.structure.service;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -169,7 +168,7 @@ public class DroolsServiceTest {
 //		 ps.publish(gbs11);
 		DroolsBookFacts fact = new DroolsBookFacts(BookActionE.NEW, gbs11);
 		DroolsBookFacts newfact = (DroolsBookFacts) droolService.execute(fact);
-		// System.out.println(fact+"Message after drool rule:" + fact);
+		 System.out.println(fact+"Message after drool rule:" + newfact);
 	}
 
 }

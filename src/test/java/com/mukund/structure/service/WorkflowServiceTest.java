@@ -62,7 +62,7 @@ public class WorkflowServiceTest {
 	public void testFindWorkFlowBookById() {
 		 Book gbs=BookBuilder.forBook(null).id(106).requester("muchouhan").attribute(null).structure(HierarchyE.GFA).build();
 		 List<WorkflowBook> books = workflowService.findWorkFlowBookById(gbs,false);
-//		 System.out.println("Records for Book Id:"+gbs.getId()+" \t"+books);
+		 System.out.println("Records for Book Id:"+gbs.getId()+" \t"+books);
 	}
 	
 	@Test

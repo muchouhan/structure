@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class RuleClassMapping {
 
-	private Set<ClassMapping> mapping = new HashSet();
+	private Set<ClassMapping> mapping = new HashSet<ClassMapping>();
 
 	public Set<ClassMapping> getMapping() {
 		return mapping;

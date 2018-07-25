@@ -8,4 +8,6 @@ import javax.faces.bean.ManagedBean;
 @SessionScoped
 public class HomeController implements Serializable {
 
+	private static final long serialVersionUID = 1774800213044156756L;
+
 }

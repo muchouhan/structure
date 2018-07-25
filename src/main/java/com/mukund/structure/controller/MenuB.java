@@ -3,15 +3,12 @@ package com.mukund.structure.controller;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import javax.annotation.PostConstruct;
 import javax.faces.context.FacesContext;
-import javax.faces.webapp.FacetTag;
 import javax.servlet.http.HttpServletRequest;
 
-import org.primefaces.component.toolbar.Toolbar;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +25,7 @@ public class MenuB implements Serializable {
 		return roles.contains(role);
 	}
 
+	@SuppressWarnings("unchecked")
 	@PostConstruct
 	public void buildToolbar() {
 
@@ -44,11 +42,11 @@ public class MenuB implements Serializable {
 
 	}
 
-	private FacetTag buildFacet(Set<String> roles) {
-		FacetTag tag = new FacetTag();
-		tag.setName("left");
-
-		return tag;
-	}
+//	private FacetTag buildFacet(Set<String> roles) {
+//		FacetTag tag = new FacetTag();
+//		tag.setName("left");
+//
+//		return tag;
+//	}
 
 }

@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
-import org.springframework.stereotype.Service;
 
 public class MetaToolDAOImpl implements MetaToolDAO {
 	private JdbcTemplate template;

@@ -3,8 +3,6 @@ package com.mukund.structure.model;
 import java.io.Serializable;
 import java.util.List;
 
-import com.thoughtworks.xstream.annotations.XStreamOmitField;
-
 import lombok.Data;
 import lombok.ToString;
 

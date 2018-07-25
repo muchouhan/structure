@@ -7,6 +7,7 @@ import com.thoughtworks.xstream.converters.SingleValueConverter;
 
 public class BookAttributeConverter implements SingleValueConverter {
 
+	@SuppressWarnings("rawtypes")
 	public boolean canConvert(Class clazz) {
 		return clazz.equals(BookAttribute.class);
 	}

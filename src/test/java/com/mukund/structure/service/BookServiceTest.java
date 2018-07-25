@@ -5,11 +5,9 @@ package com.mukund.structure.service;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
-import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.empty;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
@@ -21,7 +19,6 @@ import com.mukund.structure.model.Book;
 import com.mukund.structure.model.BookActionE;
 import com.mukund.structure.model.DroolsBookFacts;
 import com.mukund.structure.model.WorkflowBook;
-import com.mukund.structure.service.jms.JmsConfigFactory;
 
 /**
  * @author hp

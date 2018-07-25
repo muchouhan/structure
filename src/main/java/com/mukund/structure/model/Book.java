@@ -6,15 +6,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.mukund.structure.model.xml.ConfigNodeSpec;
-import com.mukund.structure.model.xml.FactoryNodeSpec;
-import com.mukund.structure.model.xml.QueueNodeSpec;
-
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 @ToString
+@Getter
 public class Book implements Cloneable, Serializable {
 
 	private static final long serialVersionUID = -589358314286376795L;
@@ -25,15 +22,8 @@ public class Book implements Cloneable, Serializable {
 	private final List<Book> legacyBooks;
 	private List<AltSystem> altSysBooks = new ArrayList<>();
 
+	@Setter
 	private List<String> approvers = new ArrayList<>();
-
-	public List<String> getApprovers() {
-		return approvers;
-	}
-
-	public void setApprovers(List<String> approvers) {
-		this.approvers = approvers;
-	}
 
 	public Book(String user, Integer id, HierarchyE hierarchy, List<BookAttribute> attributes, List<Book> legacy) {
 		requester = user;
@@ -43,24 +33,8 @@ public class Book implements Cloneable, Serializable {
 		this.legacyBooks = legacy != null ? new ArrayList<>(legacy) : new ArrayList<>();
 	}
 
-	public Integer getId() {
-		return id;
-	}
-
-	public String getRequester() {
-		return requester;
-	}
-
-	public HierarchyE getHierarchy() {
-		return hierarchy;
-	}
-
 	public List<BookAttribute> getAttributes() {
 		return Collections.unmodifiableList(attributes);
-	}
-
-	public List<Book> getLegacyBooks() {
-		return legacyBooks;
 	}
 
 	public Book getBookByCode(String stbk) {
@@ -95,7 +69,7 @@ public class Book implements Cloneable, Serializable {
 	public boolean isChanged() {
 		return !attributes.stream().filter((item) -> item.isChanged()).collect(Collectors.toList()).isEmpty();
 	}
-	
+
 	/**
 	 * This method is used to fetch changed attribute of Book.
 	 * 
@@ -104,8 +78,6 @@ public class Book implements Cloneable, Serializable {
 	public List<BookAttribute> changedAttribute() {
 		return attributes.stream().filter((item) -> item.isChanged()).collect(Collectors.toList());
 	}
-	
-	
 
 	@Override
 	public Object clone() {

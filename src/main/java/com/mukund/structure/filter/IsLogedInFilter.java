@@ -48,7 +48,7 @@ public class IsLogedInFilter implements Filter {
         if ((userSessionController == null || !userSessionController.isLoggedIn()) && !facesRequest.equals("partial/ajax") && !url.contains(loginPage)) {
 
             System.out.println("Redirect");
-            String contextPath = ((HttpServletRequest) request).getContextPath();
+//            String contextPath = ((HttpServletRequest) request).getContextPath();
             ((HttpServletRequest) request).getRequestDispatcher(loginPage).forward(request, response);
         }else if(userSessionController != null && userSessionController.isLoggedIn() && !facesRequest.equals("partial/ajax") && url.contains(loginPage) ){
             System.out.println("Redirect");

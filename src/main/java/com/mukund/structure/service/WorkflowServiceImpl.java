@@ -315,6 +315,7 @@ public class WorkflowServiceImpl implements WorkflowService {
 	 * @return
 	 */
 
+	@SuppressWarnings("unused")
 	private List<ProcessDefinition> getAllProcDefs(boolean onlyLatestVersion) {
 		logger.debug("Lookign up all process definitions with latestVersion={}", onlyLatestVersion);
 		ProcessDefinitionQuery query = repoSrvc.createProcessDefinitionQuery()

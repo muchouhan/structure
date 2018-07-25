@@ -52,7 +52,7 @@ public class WorkflowListener {
 		System.out.println("ApprovalTaskListener create" + task.getVariables());
 
 		// update request status
-		String approver = (String) task.getVariable("approver");
+//		String approver = (String) task.getVariable("approver");
 	}
 
 	/**

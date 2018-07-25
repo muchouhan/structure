@@ -22,7 +22,7 @@ public class PublishServiceImpl implements PublishService {
 		// aWriter = new FileWriter(aFile);
 		// getXmlStream().toXML(book, aWriter);
 		// aWriter.close();
-		System.out.println(getXmlStream().toXML(book));
+		System.out.println(fileName+"\t"+getXmlStream().toXML(book));
 		// } catch (IOException e) {
 		// LOGGER.error("fileName : "+fileName+" \n write(book=" + book + ")",
 		// e);
