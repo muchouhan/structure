@@ -5,15 +5,15 @@ It's a template for java web projects with theses technologies.
 
 ##GETTING STARTED
 
-1) Execute sql script on Mysql : [Mysql Script](src/main/resources/template.sql)
+1) Execute sql script on Mysql : [Mysql Script]
 
-2) Generate war from maven project (STS, IntelliJ, etc)
+2) Generate war from maven project 
 
 3) Have fun
 
 ##JDK VERSION
 
-* 1.7
+* 1.8
 
 ##MYSQL VERSION
 
@@ -27,10 +27,7 @@ It's a template for java web projects with theses technologies.
 
 ##Contact
 
-Any question or suggestion, please contact me:   czegarram@gmail.com
-
-Twitter: @czegarram
-Skype: czegarram
+Any question or suggestion, please contact me:   mukundchouhan220@gmail.com
 
 
 
